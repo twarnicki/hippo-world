@@ -7,8 +7,6 @@
 [ext_resource path="res://src/UserInterface/SceneChangeButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/UserInterface/QuitButton.tscn" type="PackedScene" id=6]
 
-
-
 [node name="UserInterface" type="Control"]
 pause_mode = 2
 anchor_right = 1.0
@@ -49,15 +47,16 @@ margin_right = 135.0
 margin_bottom = 135.0
 
 [node name="RetryButton2" parent="PauseOverlay/PauseMenu" instance=ExtResource( 4 )]
+margin_bottom = 84.0
 
 [node name="MainScreenButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
-margin_top = 91.0
+margin_top = 92.0
 margin_right = 274.0
-margin_bottom = 178.0
+margin_bottom = 176.0
 text = "Back to Main Screen"
-next_scene = "res://src/screens/MainScreen.tscn"
+next_scene_path = "res://src/Screens/MainScreen.tscn"
 
 [node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 6 )]
-margin_top = 182.0
+margin_top = 184.0
 margin_right = 274.0
 margin_bottom = 270.0
